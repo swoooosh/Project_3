@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<meta charset="UTF-8">
+	<title>Music Club</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Quintessential&family=Thasadith:ital@1&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/098fd12808.js" crossorigin="anonymous"></script>
+
+<!-- Анимация при скролле-->
+	<link rel="stylesheet" href="animate.css">
+	<script src="script.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+<!-- Анимация при скролле -->
+</head>
+<body oncopy="return false;" onmousedown="return false;" oncontextmenu="return false;">
+<header>
+	<div>
+		<img src="image/image_1.png" alt="" class="menu__image">
+		<h2 class="text_header wow fadeInDown" data-wow-delay="0.8s">
+			<span>W</span>elcome to <span>M</span>usic<span>C</span>lub
+		</h2>
+	</div>
+	<div class="conteiner_header">
+		<div class="conteiner_h">
+			<h2 class="logo">MUSIC CLUB</h2>
+			<nav>
+				<ul class="top_menu">
+					<li>
+						<a href="index.html" class="wave-btn">
+							<span class="wave-btn_text">Home</span>
+							<span class="wave-btn_waves"></span>
+						</a>
+					</li>
+					<li>
+						<a href="index_about.html" class="wave-btn">
+							<span class="wave-btn_text">About Us</span>
+							<span class="wave-btn_waves"></span>
+						</a>
+					</li>
+					<li>
+						<a href="index_events.html" class="wave-btn">
+							<span class="wave-btn_text">Events</span>
+							<span class="wave-btn_waves"></span>
+						</a>
+					</li>
+					<li>
+						<a href="index_service.html" class="wave-btn">
+							<span class="wave-btn_text">Services</span>
+							<span class="wave-btn_waves"></span>
+						</a>
+					</li>
+					<li>
+						<a href="index_gallery.html" class="wave-btn">
+							<span class="wave-btn_text">Gallery</span>
+							<span class="wave-btn_waves"></span>
+						</a>
+					</li>
+					<li>
+						<a href="index_contact.html" class="wave-btn">
+							<span class="wave-btn_text">Contacts</span>
+							<span class="wave-btn_waves"></span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="btn_music">
+  				<input type="checkbox" name="" id="mybtn">
+  				<span class="button_music"></span>
+  				<i class="fas fa-play"></i>
+			</div>
+    		<audio loop id="myaudio">
+      			<source src="music/Armin Van Buuren vs. Shapov - The Last Dancer.mp3" type="audio/ogg; codecs=vorbis"/ >
+    		</audio>
+  			<script>
+    			document.getElementById("mybtn").onclick = function()
+    			{
+      				var myaudio = document.getElementById("myaudio");
+      				if(myaudio.paused == true)
+      				{
+        				document.getElementById("myaudio").play();
+      				}
+      				else if (myaudio.paused == false)
+      				{
+        			document.getElementById("myaudio").pause();
+      				}
+    			}
+  				myVid=document.getElementById("myaudio");
+  				myVid.volume=0.1;
+			</script>
+		</div>
+
+		<div class="conteiner_h_mobile">
+			<h2 class="logo">MUSIC CLUB</h2>
+			<label for="toggle" class="toggle_button"><img src="icon/menu.png" class="menu_tablet"></label>
+			<input type="checkbox" id="toggle">
+			<div class="menu_mobile">
+				<a href="index.html">Home</a>
+				<a href="index_about.html">About Us</a>
+				<a href="index_events.html">Events</a>
+				<a href="index_service.html">Services</a>
+				<a href="index_gallery.html">Gallery</a>
+				<a href="index_contact.html">Contacts</a>
+			</div>
+		</div>
+	</div>
+</header>
+
+<main>
+	<div class="conteiner_info" id="info">
+		<div class="conteiner_i">
+			<div class="box_image_i wow fadeInLeft" data-wow-delay="0.5s" data-wow-offset="100" data-wow-duration="2s">
+				<img src="https://i.pinimg.com/564x/b1/ad/e8/b1ade82b60e1b5d15665dac4ff6d057e.jpg" class="image_i">
+			</div>
+			<div class="text_i">
+				<h1 class="wow fadeInDown" data-wow-delay="0.8s" data-wow-offset="100" data-wow-duration="2s">
+					FEEL THE RHYTHM OF THE ENDLESS NIGHT!
+				</h1>
+				<p class="wow fadeInRight" data-wow-delay="1s" data-wow-offset="100" data-wow-duration="2s">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, numquam. Magnam dolore optio accusantium earum, placeat ipsam autem possimus et velit explicabo laudantium fugit dolorem, inventore animi tenetur ratione. Ullam.
+					Optio voluptas debitis, omnis magni dolor similique. Ratione, ad architecto voluptatibus esse perferendis, voluptatem a tempora accusantium qui laboriosam voluptate voluptas nam earum quia praesentium, facilis molestiae, voluptates unde repellendus.
+				</p>
+				<div class="wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="2s">
+				<a href="index_contact.html">
+					<button class="neon_button_info">Buy tickets</button>
+				</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="conteiner_about_us">
+		<div class="conteiner_us">
+			<div class="text_us">
+				<h1 class="wow fadeInDown" data-wow-delay="0.8s" data-wow-offset="100" data-wow-duration="2s">
+					About Us
+				</h1>
+				<p class="wow fadeInLeft" data-wow-delay="1s" data-wow-duration="2s">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, numquam. Magnam dolore optio accusantium earum, placeat ipsam autem possimus et velit explicabo laudantium fugit dolorem, inventore animi tenetur ratione. Ullam.
+					Optio voluptas debitis, omnis magni dolor similique. Ratione, ad architecto voluptatibus esse perferendis, voluptatem a tempora accusantium qui laboriosam voluptate voluptas nam earum quia praesentium, facilis molestiae, voluptates unde repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam temporibus inventore omnis soluta iure nobis laborum, in numquam quaerat voluptas aspernatur perferendis ab repellendus.
+				</p>
+				<div class="wow fadeInUp" data-wow-delay="0.9s" data-wow-duration="2s">
+				<a href="index_about.html">
+					<button class="neon_button_us">Reed More</button>
+				</a>
+				</div>
+			</div>
+			<div class="box_image_us wow fadeInRight" data-wow-delay="0.5s" data-wow-offset="100" data-wow-duration="2s">
+				<img src="https://i.pinimg.com/564x/fe/33/99/fe339916c5898157474c450425ab0b89.jpg" class="image_us">
+			</div>
+		</div>
+	</div>
+
+	<div class="conteiner_events">
+		<img src="image/image_3.png" class="image_ev">
+		<div class="content_events">
+			<h1 class="wow fadeInRight" data-wow-delay="0.7s" data-wow-duration="2s">PLUNGE INTO THE HOTTEST EXCITING NIGHTLIFE AND DANCE UNTIL DAWN WITH PREMIER MUSIC in a nightclub all night</h1>
+			<a href="index_events.html" class="wow fadeInUp" data-wow-delay="0.7s" >
+				<button class="neon_button_events">Reed More</button>
+			</a>
+		</div>
+		<div class="overley"></div>
+	</div>
+
+	<div class="conteiner_service" id="service">
+		<div class="conteiner_se">
+			<div class="box_1_se">
+				<div class="box_image_1 wow fadeInLeft" data-wow-delay="0.5s" data-wow-duration="2s">
+					<div class="box_image_1_se">
+						<img src="https://i.pinimg.com/564x/9b/a6/f2/9ba6f28117409b95ec68248458337d39.jpg" class="se_image_1">
+						<div class="overley_se"></div>
+					</div>
+					<a href="#black">Emma Anderson</a>
+						<div id="black">
+							<div class="personal_card">
+								<div class="icon_card">
+									<div>
+										<a href="https://www.google.com/intl/ru/gmail/about/" class="mail">
+											<i class="fas fa-envelope"></i>
+										</a>
+										<a href="#service" class="close_card"><i class="fas fa-times"></i></a>
+									</div>
+									<div class="img_card">
+										<img src="card/image_1.png">
+									</div>
+									<h1>Emma Anderson</h1>
+									<h2>Director</h2>
+								</div>
+								<div class="info_card">
+									<div class="text_card">	
+										<h1>About</h1>
+										<h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, explicabo.</h2>
+										<div>
+											<ul class="social">
+												<li class="social_item">
+													<a href="https://ru-ru.facebook.com/facebook">
+													<i class="fa fa-facebook"></i>
+													</a>
+												</li>
+												<li class="social_item">
+													<a href="https://web.whatsapp.com">
+													<i class="fa fa-whatsapp"></i>
+													</a>
+												</li>
+												<li class="social_item">
+													<a href="https://twitter.com">
+													<i class="fa fa-twitter"></i>
+													</a>
+												</li>
+												<li class="social_item">
+													<a href="https://www.instagram.com">
+													<i class="fa fa-instagram"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<button class="neon_button_card">Contact Me</button>
+										<div class="post_card">
+											<div class="following">
+												<h1 class="following">100</h1>
+												<h2>POST</h2>
+											</div>
+											<div class="following">
+												<h1 class="following">3.1K</h1>
+												<h2>FOLLOWING</h2>
+											</div>
+											<div class="following">
+												<h1>1.3K</h1>
+												<h2>FOLLOWERS</h2>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					<p>Director</p>
+				</div>
+				<div class="box_image_1 wow fadeInLeft" data-wow-delay="0.7s" data-wow-duration="3s">
+					<div class="box_image_1_se">
+						<img src="https://i.pinimg.com/564x/0b/cd/4c/0bcd4c093e7376a5f44e0be482f2cc06.jpg" class="se_image_1">
+						<div class="overley_se"></div>
+					</div>
+					<a href="#black2">Drusilla Ford</a>
+						<div id="black2">
+							<div class="personal_card">
+								<div class="icon_card">
+									<div>
+										<a href="https://www.google.com/intl/ru/gmail/about/" class="mail">
+											<i class="fas fa-envelope"></i>
+										</a>
+										<a href="#service" class="close_card"><i class="fas fa-times"></i></a>
+									</div>
+									<div class="img_card">
+										<img src="card/image_2.png">
+									</div>
+									<h1>Drusilla Ford</h1>
+									<h2>Event Manager</h2>
+								</div>
+								<div class="info_card">
+									<div class="text_card">	
+										<h1>About</h1>
+										<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit.</h2>
+										<div>
+											<ul class="social">
+												<li class="social_item">
+													<a href="https://ru-ru.facebook.com/facebook">
+													<i class="fa fa-facebook"></i>
+													</a>
+												</li>
+												<li class="social_item">
+													<a href="https://web.whatsapp.com">
+													<i class="fa fa-whatsapp"></i>
+													</a>
+												</li>
+												<li class="social_item">
+													<a href="https://twitter.com">
+													<i class="fa fa-twitter"></i>
+													</a>
+												</li>
+												<li class="social_item">
+													<a href="https://www.instagram.com">
+													<i class="fa fa-instagram"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<button class="neon_button_card">Contact Me</button>
+										<div class="post_card">
+											<div class="following">
+												<h1 class="following">150</h1>
+												<h2>POST</h2>
+											</div>
+											<div class="following">
+												<h1 class="following">2.5K</h1>
+												<h2>FOLLOWING</h2>
+											</div>
+											<div class="following">
+												<h1>2.6K</h1>
+												<h2>FOLLOWERS</h2>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					<p>Event Manager</p>
+				</div>
+				<div class="se_text wow fadeInRight" data-wow-delay="0.7s" data-wow-duration="2s">
+				<h1>Our Team</h1>
+				<h2>These people make our nightclub one of the best places for a party in all major countries of the world.</h2>
+				<a href="index_service.html">
+					<button class="neon_button_service">Reed More</button>
+				</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="conteiner_service">
+		<div class="conteiner_se">
+			<div class="box_2_se wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="2s">
+				<div class="box_image_1">
+					<div class="box_image_1_se">
+						<img src="https://i.pinimg.com/564x/52/1f/e2/521fe2ecd82b760833d1bb272f0295f3.jpg">
+						<div class="overley_se"></div>
+					</div>
+					<a href="#black3">Thomas Hawk</a>
+						<div id="black3">
+							<div class="personal_card">
+								<div class="icon_card">
+									<div>
+										<a href="https://www.google.com/intl/ru/gmail/about/" class="mail">
+											<i class="fas fa-envelope"></i>
+										</a>
+										<a href="#service" class="close_card"><i class="fas fa-times"></i></a>
+									</div>
+									<div class="img_card">
+										<img src="card/image_3.png">
+									</div>
+									<h1>Thomas Hawk</h1>
+									<h2>MC</h2>
+								</div>
+								<div class="info_card">
+									<div class="text_card">	
+										<h1>About</h1>
+										<h2>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Sapiente omnis, ipsa.</h2>
+										<div>
+											<ul class="social">
+												<li class="social_item">
+													<a href="https://ru-ru.facebook.com/facebook">
+													<i class="fa fa-facebook"></i>
+													</a>
+												</li>
+												<li class="social_item">
+													<a href="https://web.whatsapp.com">
+													<i class="fa fa-whatsapp"></i>
+													</a>
+												</li>
+												<li class="social_item">
+													<a href="https://twitter.com">
+													<i class="fa fa-twitter"></i>
+													</a>
+												</li>
+												<li class="social_item">
+													<a href="https://www.instagram.com">
+													<i class="fa fa-instagram"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<button class="neon_button_card">Contact Me</button>
+										<div class="post_card">
+											<div class="following">
+												<h1 class="following">158</h1>
+												<h2>POST</h2>
+											</div>
+											<div class="following">
+												<h1 class="following">1.1K</h1>
+												<h2>FOLLOWING</h2>
+											</div>
+											<div class="following">
+												<h1>4.1K</h1>
+												<h2>FOLLOWERS</h2>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					<p>MC</p>
+				</div>
+				<div class="box_image_1">
+					<div class="box_image_1_se">
+						<img src="https://i.pinimg.com/564x/ef/f3/66/eff366ad8c20febe8eae98dff6203bb4.jpg">
+						<div class="overley_se"></div>
+					</div>
+					<a href="#black4">John West</a>
+						<div id="black4">
+							<div class="personal_card">
+								<div class="icon_card">
+									<div>
+										<a href="https://www.google.com/intl/ru/gmail/about/" class="mail">
+											<i class="fas fa-envelope"></i>
+										</a>
+										<a href="#service" class="close_card"><i class="fas fa-times"></i></a>
+									</div>
+									<div class="img_card">
+										<img src="card/image_4.png">
+									</div>
+									<h1>John West</h1>
+									<h2>Founder, MC</h2>
+								</div>
+								<div class="info_card">
+									<div class="text_card">	
+										<h1>About</h1>
+										<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat a doloremque tempore.</h2>
+										<div>
+											<ul class="social">
+												<li class="social_item">
+													<a href="https://ru-ru.facebook.com/facebook">
+													<i class="fa fa-facebook"></i>
+													</a>
+												</li>
+												<li class="social_item">
+													<a href="https://web.whatsapp.com">
+													<i class="fa fa-whatsapp"></i>
+													</a>
+												</li>
+												<li class="social_item">
+													<a href="https://twitter.com">
+													<i class="fa fa-twitter"></i>
+													</a>
+												</li>
+												<li class="social_item">
+													<a href="https://www.instagram.com">
+													<i class="fa fa-instagram"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<button class="neon_button_card">Contact Me</button>
+										<div class="post_card">
+											<div class="following">
+												<h1 class="following">119</h1>
+												<h2>POST</h2>
+											</div>
+											<div class="following">
+												<h1 class="following">1.8K</h1>
+												<h2>FOLLOWING</h2>
+											</div>
+											<div class="following">
+												<h1>2.4K</h1>
+												<h2>FOLLOWERS</h2>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					<p>Founder, MC</p>
+				</div>
+				<div class="box_image_1">
+					<div class="box_image_1_se">
+						<img src="https://i.pinimg.com/564x/ec/38/9a/ec389a86e54c0ebd0db4ca54cabe2976.jpg">
+						<div class="overley_se"></div>
+					</div>
+					<a href="#black5">Ernest Craw</a>
+						<div id="black5">
+							<div class="personal_card">
+								<div class="icon_card">
+									<div>
+										<a href="https://www.google.com/intl/ru/gmail/about/" class="mail">
+											<i class="fas fa-envelope"></i>
+										</a>
+										<a href="#service" class="close_card"><i class="fas fa-times"></i></a>
+									</div>
+									<div class="img_card">
+										<img src="card/image_5.png">
+									</div>
+									<h1>Ernest Craw</h1>
+									<h2>Disc Hines</h2>
+								</div>
+								<div class="info_card">
+									<div class="text_card">	
+										<h1>About</h1>
+										<h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique perferendis doloribus voluptas asperiores.</h2>
+										<div>
+											<ul class="social">
+												<li class="social_item">
+													<a href="https://ru-ru.facebook.com/facebook">
+													<i class="fa fa-facebook"></i>
+													</a>
+												</li>
+												<li class="social_item">
+													<a href="https://web.whatsapp.com">
+													<i class="fa fa-whatsapp"></i>
+													</a>
+												</li>
+												<li class="social_item">
+													<a href="https://twitter.com">
+													<i class="fa fa-twitter"></i>
+													</a>
+												</li>
+												<li class="social_item">
+													<a href="https://www.instagram.com">
+													<i class="fa fa-instagram"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<button class="neon_button_card">Contact Me</button>
+										<div class="post_card">
+											<div class="following">
+												<h1 class="following">167</h1>
+												<h2>POST</h2>
+											</div>
+											<div class="following">
+												<h1 class="following">1.3K</h1>
+												<h2>FOLLOWING</h2>
+											</div>
+											<div class="following">
+												<h1>2.7K</h1>
+												<h2>FOLLOWERS</h2>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					<p>Disc Hines</p>
+				</div>
+				<div class="box_image_1">
+					<div class="box_image_1_se">
+						<img src="https://i.pinimg.com/564x/cd/d5/09/cdd5096de5d8cb040eed8880b7aa6db1.jpg">
+						<div class="overley_se"></div>
+					</div>
+					<a href="#black6">Eileen Ellis</a>
+						<div id="black6">
+							<div class="personal_card">
+								<div class="icon_card">
+									<div>
+										<a href="https://www.google.com/intl/ru/gmail/about/" class="mail">
+											<i class="fas fa-envelope"></i>
+										</a>
+										<a href="#service" class="close_card"><i class="fas fa-times"></i></a>
+									</div>
+									<div class="img_card">
+										<img src="card/image_6.png">
+									</div>
+									<h1>Eileen Ellis</h1>
+									<h2>Turntablist</h2>
+								</div>
+								<div class="info_card">
+									<div class="text_card">	
+										<h1>About</h1>
+										<h2>Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Quae voluptatibus minima impedit ipsum odio saepe.</h2>
+										<div>
+											<ul class="social">
+												<li class="social_item">
+													<a href="https://ru-ru.facebook.com/facebook">
+													<i class="fa fa-facebook"></i>
+													</a>
+												</li>
+												<li class="social_item">
+													<a href="https://web.whatsapp.com">
+													<i class="fa fa-whatsapp"></i>
+													</a>
+												</li>
+												<li class="social_item">
+													<a href="https://twitter.com">
+													<i class="fa fa-twitter"></i>
+													</a>
+												</li>
+												<li class="social_item">
+													<a href="https://www.instagram.com">
+													<i class="fa fa-instagram"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<button class="neon_button_card">Contact Me</button>
+										<div class="post_card">
+											<div class="following">
+												<h1 class="following">199</h1>
+												<h2>POST</h2>
+											</div>
+											<div class="following">
+												<h1 class="following">1.4K</h1>
+												<h2>FOLLOWING</h2>
+											</div>
+											<div class="following">
+												<h1>1.9K</h1>
+												<h2>FOLLOWERS</h2>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					<p>Turntablist</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="conteiner_gallery">
+		<div class="gallery_header">
+			<h1>Also waiting for you</h1>
+			<a href="index_gallery.html">
+				<button class="neon_button_gallery">Reed More</button>
+			</a>
+		</div>
+		<div class="conteiner_ga wow zoomIn" data-wow-delay="0.7s" data-wow-duration="2s">
+			<div class="clip clip1">
+				<div class="content_ga">
+					<h1>The best vip places in the whole city</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Optio iure consectetur harum, perspiciatis alias. Porro, quod ipsa nobis labore similique, necessitatibus illum? Fugit, reiciendis. Necessitatibus quam aspernatur quas itaque eligendi?</p>
+				</div>
+			</div>
+			<div class="clip clip2">
+				<div class="content_ga">
+					<h1>A huge number of bars</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Optio iure consectetur harum, perspiciatis alias. Porro, quod ipsa nobis labore similique, necessitatibus illum? Fugit, reiciendis. Necessitatibus quam aspernatur quas itaque eligendi?</p>
+				</div>
+			</div>
+			<div class="clip clip3">
+				<div class="content_ga">
+					<h1>Unforgettable neon performances</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Optio iure consectetur harum, perspiciatis alias. Porro, quod ipsa nobis labore similique, necessitatibus illum? Fugit, reiciendis. Necessitatibus quam aspernatur quas itaque eligendi?</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="conteiner_accordion">
+		<div class="conteiner_acc">
+			<div class="image_acc wow fadeInLeft" data-wow-delay="1s" data-wow-duration="2s">
+				<img src="https://i.pinimg.com/564x/8c/66/8a/8c668a1c2de6bdcef33744db33946c72.jpg" class="accordion_image">
+				<div class="overley_acc"></div>
+			</div>
+
+		<ul class="accordion">
+    		<li class="wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="2s">
+     			<label for="item1" class="accordion-header">Glittering Shows</label>
+     			<input type="checkbox" class="accordion-input"  id="item1"/>
+    			<div class="accordion-content">
+      				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium sunt sapiente cupiditate nulla, atque numquam. Quia, quod consequatur dolore nihil placeat, voluptatibus accusantium sit ad quaerat beatae quam, aliquam, quis.</p>
+     			</div>
+    		</li>
+    		<li class="wow fadeInRight" data-wow-delay="0.6s" data-wow-duration="2s">
+    			<label for="item2" class="accordion-header">Excited Attendees</label>
+     			<input type="checkbox" class="accordion-input"  id="item2" />
+     			<div class="accordion-content">
+      				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni tenetur sequi deserunt eligendi praesentium sunt saepe accusantium illo nobis placeat? Voluptate at quisquam quia similique id tenetur nam ipsum adipisci. Commodi fugit qui at quibusdam, est ducimus delectus blanditiis dolorem incidunt facilis, reiciendis recusandae similique, ipsam esse? Animi illo porro, nisi laudantium deserunt facere debitis commodi a sequi obcaecati id!</p>
+     			</div>
+    		</li>
+    		<li class="wow fadeInRight" data-wow-delay="0.7s" data-wow-duration="2s">
+     			<label for="item3" class="accordion-header">Enjoy Your Evening</label>
+     			<input type="checkbox" class="accordion-input" id="item3" />
+     			<div class="accordion-content">
+      				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur porro, quo reprehenderit impedit suscipit obcaecati necessitatibus quam praesentium accusamus, sit blanditiis deleniti doloribus placeat voluptas iure, autem tempore, mollitia. Quos.</p>
+     			</div>
+    		</li>
+    		<li class="wow fadeInRight" data-wow-delay="0.8s" data-wow-duration="2s">
+    			<label for="item4" class="accordion-header">Get a Chance to Meet Your Favorite</label>
+     			<input type="checkbox" class="accordion-input" id="item4" />
+     			<div class="accordion-content">
+      				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, ipsam. Suscipit earum facere expedita eum amet impedit vitae fugit eligendi consectetur, quo nemo ipsum neque adipisci commodi tempore porro magni.
+      				Odit, officia recusandae! Excepturi placeat esse eos cumque mollitia nulla praesentium dolore, optio nisi iusto culpa distinctio aspernatur voluptatum ipsam vero corrupti quasi dolorum soluta est doloremque recusandae ut nobis.
+      				Delectus ullam eligendi architecto modi, deserunt debitis eum laboriosam, veritatis voluptas iusto? Error a libero delectus sed deleniti id eos cupiditate fugiat, asperiores animi? Ad quas odit earum laboriosam maiores.
+      				Quisquam veniam suscipit ex dolorum accusantium, sit, corporis, itaque iure asperiores, obcaecati consequuntur! Provident, aut sunt sit accusantium tempora dolore ipsa quas, illo magni aliquid consequatur eligendi blanditiis cupiditate similique?
+      				</p>
+     			</div>
+    		</li>
+    		<li class="wow fadeInRight" data-wow-delay="0.9s" data-wow-duration="2s">
+     			<label for="item5" class="accordion-header">SUNT IN CULPA QUI OFFICIA DESERUNT MOLLIT</label>
+     			<input type="checkbox" class="accordion-input" id="item5" />
+     			<div class="accordion-content">
+      				<p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Ex voluptas debitis, consectetur. Id sunt inventore, adipisci quis distinctio ea autem itaque modi, voluptatum, molestiae odio saepe corrupti. Aperiam illum, maxime.
+      				Quibusdam porro quas officia voluptatem labore provident beatae autem at hic consequuntur ex facilis atque quia natus ab omnis neque commodi voluptatum quis reprehenderit eligendi deserunt architecto harum, modi. Numquam!</p>
+     			</div>
+    		</li>
+   		</ul>
+		</div>
+	</div>
+
+	<div class="conteiner_skills">
+		<div class="conteiner_sk">
+			<div class="box_skills">
+				<h1>Many popular genres for every taste</h1>
+				<div class="skills wow fadeInLeft" data-wow-delay="0.5s" data-wow-duration="2s">
+					<span class="Name_sk">HOUSE</span>
+					<div class="percent">
+						<div class="progress wow fadeInRight" data-wow-delay="0.5s" style="width: 88%"></div>
+					</div>
+					<span class="Value_sk">88%</span>
+				</div>
+				<div class="skills wow fadeInLeft" data-wow-delay="0.6s" data-wow-duration="2s">
+					<span class="Name_sk">DARK HOUSE</span>
+					<div class="percent">
+						<div class="progress wow fadeInRight" data-wow-delay="0.5s" style="width: 61%"></div>
+					</div>
+					<span class="Value_sk">61%</span>
+				</div>
+				<div class="skills wow fadeInLeft" data-wow-delay="0.7s" data-wow-duration="2s">
+					<span class="Name_sk">DEEP HOUSE</span>
+					<div class="percent">
+						<div class="progress wow fadeInRight" data-wow-delay="0.5s" style="width: 72%"></div>
+					</div>
+					<span class="Value_sk">72%</span>
+				</div>
+				<div class="skills wow fadeInLeft" data-wow-delay="0.8s" data-wow-duration="2s">
+					<span class="Name_sk">TRANCE</span>
+					<div class="percent">
+						<div class="progress wow fadeInRight" data-wow-delay="0.5s" style="width: 32%"></div>
+					</div>
+					<span class="Value_sk">32%</span>
+				</div>
+				<div class="skills wow fadeInLeft" data-wow-delay="0.9s" data-wow-duration="2s">
+					<span class="Name_sk">DRUM n BASS</span>
+					<div class="percent">
+						<div class="progress wow fadeInRight" data-wow-delay="0.5s" style="width: 55%"></div>
+					</div>
+					<span class="Value_sk">55%</span>
+				</div>
+				<div class="skills wow fadeInLeft" data-wow-delay="1s" data-wow-duration="2s">
+					<span class="Name_sk">HARDCORE</span>
+					<div class="percent">
+						<div class="progress wow fadeInRight" data-wow-delay="0.5s" style="width: 78%"></div>
+					</div>
+					<span class="Value_sk">78%</span>
+				</div>
+			</div>
+			<div class="img_skils">
+				<img src="https://i.pinimg.com/564x/29/a5/30/29a530d446c2a9f84ec1b8e4b5e43138.jpg" class="wow fadeInRight" data-wow-delay="1s" data-wow-offset="110" data-wow-duration="2s">
+			</div>
+		</div>
+	</div>
+</main>
+
+<footer>
+	<div class="footer">
+		<div class="conteiner_footer">
+		<div class="text_footer_header">
+			<p>Music Club</p>
+			<h1>The best thing about being a DJ is making people happy.There is nothing like seeing people get up from a table to dance or the expression on their face when they hear a song they love.</h1>
+		</div>
+			<div class="footer_li">
+				<div>
+					<li><h1 class="footer_header">About</h1></li>
+					<li><h1 class="footer_line">About Us</h1></li>
+					<li><h1 class="footer_line">Coreers</h1></li>
+					<li><h1 class="footer_line">Corporote</h1></li>
+					<li><h1 class="footer_line">Where to buy</h1></li>
+				</div>
+				<div>
+					<li><h1 class="footer_header">Supportt</h1></li>
+					<li><h1 class="footer_line">Contact</h1></li>
+					<li><h1 class="footer_line">Retuns</h1></li>
+					<li><h1 class="footer_line">Registration</h1></li>
+					<li><h1 class="footer_line">Help</h1></li>
+				</div>
+				<div>
+					<li><h1 class="footer_header">Legal</h1></li>
+					<li><h1 class="footer_line">People</h1></li>
+					<li><h1 class="footer_line">Team Member</h1></li>
+					<li><h1 class="footer_line">Potents</h1></li>
+				</div>
+				<div>
+					<li><h1 class="footer_header">Other</h1></li>
+					<li><h1 class="footer_line">Account</h1></li>
+				</div>
+			</div>
+		<div class="text_footer_one">
+			<p class="text_footer">© 2020 «Project to SavichCompany. All Rights Reserwed</p>
+		</div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
